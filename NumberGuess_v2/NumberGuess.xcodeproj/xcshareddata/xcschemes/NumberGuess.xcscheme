@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A830D537270C586B000A932B"
-               BuildableName = "NumberGuess_v2.app"
-               BlueprintName = "NumberGuess_v2"
-               ReferencedContainer = "container:NumberGuess_v2.xcodeproj">
+               BlueprintIdentifier = "F4D3A37B275E9652006C34A0"
+               BuildableName = "NumberGuess.app"
+               BlueprintName = "NumberGuess"
+               ReferencedContainer = "container:NumberGuess.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A830D537270C586B000A932B"
-            BuildableName = "NumberGuess_v2.app"
-            BlueprintName = "NumberGuess_v2"
-            ReferencedContainer = "container:NumberGuess_v2.xcodeproj">
+            BlueprintIdentifier = "F4D3A37B275E9652006C34A0"
+            BuildableName = "NumberGuess.app"
+            BlueprintName = "NumberGuess"
+            ReferencedContainer = "container:NumberGuess.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A830D537270C586B000A932B"
-            BuildableName = "NumberGuess_v2.app"
-            BlueprintName = "NumberGuess_v2"
-            ReferencedContainer = "container:NumberGuess_v2.xcodeproj">
+            BlueprintIdentifier = "F4D3A37B275E9652006C34A0"
+            BuildableName = "NumberGuess.app"
+            BlueprintName = "NumberGuess"
+            ReferencedContainer = "container:NumberGuess.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
