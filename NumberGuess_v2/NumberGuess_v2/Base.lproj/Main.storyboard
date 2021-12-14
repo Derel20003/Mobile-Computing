@@ -40,6 +40,7 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="onTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qwd-q7-aJ0"/>
+                                    <segue destination="bDX-IH-bbd" kind="show" id="UZn-9A-JLo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxN-uS-Cox">
@@ -119,6 +120,9 @@
             <point key="canvasLocation" x="-521" y="-15"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UZn-9A-JLo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="rock.jpg" width="540" height="303.75"/>
         <systemColor name="systemBackgroundColor">
