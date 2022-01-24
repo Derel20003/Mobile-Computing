@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F46664242771F80500673695 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46664232771F80500673695 /* HistoryTableViewController.swift */; };
 		F4D3A380275E9652006C34A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3A37F275E9652006C34A0 /* AppDelegate.swift */; };
 		F4D3A382275E9652006C34A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3A381275E9652006C34A0 /* SceneDelegate.swift */; };
 		F4D3A384275E9652006C34A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3A383275E9652006C34A0 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F46664232771F80500673695 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		F4D3A37C275E9652006C34A0 /* NumberGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D3A37F275E9652006C34A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D3A381275E9652006C34A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F4D3A38D275E9653006C34A0 /* Info.plist */,
 				F4D3A395275E978E006C34A0 /* Model.swift */,
 				F4D3A397275E9C83006C34A0 /* HistoryViewController.swift */,
+				F46664232771F80500673695 /* HistoryTableViewController.swift */,
 			);
 			path = NumberGuess;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				F4D3A384275E9652006C34A0 /* ViewController.swift in Sources */,
 				F4D3A380275E9652006C34A0 /* AppDelegate.swift in Sources */,
+				F46664242771F80500673695 /* HistoryTableViewController.swift in Sources */,
 				F4D3A382275E9652006C34A0 /* SceneDelegate.swift in Sources */,
 				F4D3A398275E9C83006C34A0 /* HistoryViewController.swift in Sources */,
 				F4D3A396275E978E006C34A0 /* Model.swift in Sources */,
