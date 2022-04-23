@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yzl-pm-Bvw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARExample-->
+        <scene sceneID="fxo-Z2-ZaB">
+            <objects>
+                <navigationController title="ARExample" id="yzl-pm-Bvw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E6F-yM-wTN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I14-6k-Jwe" kind="relationship" relationship="rootViewController" id="x64-SK-0Ho"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTS-fP-4GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1819" y="-156"/>
+        </scene>
+        <!--Overview Controller-->
+        <scene sceneID="25r-rU-0Qm">
+            <objects>
+                <viewController id="I14-6k-Jwe" customClass="OverviewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyL-YG-WG8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1w-0B-cFv">
+                                <rect key="frame" x="168" y="371" width="78" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AR View"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showARViewSegue" id="Fyu-hF-IGx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-HF-alI">
+                                <rect key="frame" x="165" y="472" width="85" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Compass"/>
+                                <connections>
+                                    <segue destination="atp-D2-ivm" kind="show" identifier="showCompassViewSegue" id="CDt-aA-Gdk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JzN-zK-YyE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4iE-HF-alI" firstAttribute="centerX" secondItem="K1w-0B-cFv" secondAttribute="centerX" constant="0.5" id="JgH-6b-3Cp"/>
+                            <constraint firstItem="4iE-HF-alI" firstAttribute="centerX" secondItem="pyL-YG-WG8" secondAttribute="centerX" constant="0.5" id="JlC-2u-eYL"/>
+                            <constraint firstItem="K1w-0B-cFv" firstAttribute="top" secondItem="JzN-zK-YyE" secondAttribute="top" constant="283" id="dA4-ET-7Sh"/>
+                            <constraint firstItem="4iE-HF-alI" firstAttribute="centerY" secondItem="K1w-0B-cFv" secondAttribute="centerY" constant="101" id="yaQ-wf-Sfc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v8K-Pd-3HI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJa-wD-vZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1062.3188405797102" y="-156.02678571428569"/>
+        </scene>
+        <!--Compass View Controller-->
+        <scene sceneID="o37-xN-ghM">
+            <objects>
+                <viewController id="atp-D2-ivm" customClass="CompassViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iph-wl-coA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-AW-NUa">
+                                <rect key="frame" x="192" y="213" width="30" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simple_compass_rose.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBA-K1-WKJ">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QBA-K1-WKJ" secondAttribute="height" multiplier="1:1" id="fI7-0s-kaq"/>
+                                    <constraint firstAttribute="width" constant="200" id="osO-Vh-kiY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zVr-0C-aVQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QBA-K1-WKJ" firstAttribute="top" secondItem="Kck-AW-NUa" secondAttribute="bottom" constant="100" id="63u-0J-gLs"/>
+                            <constraint firstItem="QBA-K1-WKJ" firstAttribute="centerY" secondItem="iph-wl-coA" secondAttribute="centerY" id="NcX-iW-y98"/>
+                            <constraint firstItem="QBA-K1-WKJ" firstAttribute="centerX" secondItem="iph-wl-coA" secondAttribute="centerX" id="WgP-0j-TOa"/>
+                            <constraint firstItem="Kck-AW-NUa" firstAttribute="centerX" secondItem="iph-wl-coA" secondAttribute="centerX" id="nm6-63-WX8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j0F-8a-h9W"/>
+                    <connections>
+                        <outlet property="compassLabel" destination="Kck-AW-NUa" id="sC4-aq-tR8"/>
+                        <outlet property="compassRoseImageView" destination="QBA-K1-WKJ" id="dyh-3N-9G6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gC2-kl-AMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250.72463768115944" y="172.76785714285714"/>
+        </scene>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arView>
+                    <navigationItem key="navigationItem" id="aAr-wY-vjF"/>
+                    <connections>
+                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="-468"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Simple_compass_rose.svg.png" width="480" height="480"/>
+    </resources>
+</document>
