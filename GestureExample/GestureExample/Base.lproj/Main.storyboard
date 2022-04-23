@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="C1f-4v-TGk">
+                                <rect key="frame" x="0.0" y="119" width="414" height="268"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Trm-D5-pUs"/>
+                                    <constraint firstAttribute="height" constant="268" id="bNI-My-rAK"/>
+                                    <constraint firstAttribute="width" secondItem="C1f-4v-TGk" secondAttribute="height" multiplier="207:134" id="iWC-ZE-BZA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuna.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="adK-0P-RBv">
+                                <rect key="frame" x="102" y="714" width="275" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="DLS-qB-d7j"/>
+                                    <constraint firstAttribute="height" constant="128" id="Ef3-2Z-HUT"/>
+                                    <constraint firstAttribute="width" secondItem="adK-0P-RBv" secondAttribute="height" multiplier="275:128" id="hb9-9h-mAp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="adK-0P-RBv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="AqW-Fu-7DJ"/>
+                            <constraint firstItem="C1f-4v-TGk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYK-Jg-fkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="adK-0P-RBv" secondAttribute="bottom" constant="20" id="lQL-L7-iY0"/>
+                            <constraint firstItem="C1f-4v-TGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="vIu-yx-Kn6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="W2l-46-bXW" appends="YES" id="RaR-YD-vz9"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="cat" destination="C1f-4v-TGk" id="OlK-32-bjd"/>
+                        <outlet property="tuna" destination="adK-0P-RBv" id="REJ-dE-B6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="W2l-46-bXW">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="lec-iB-fOo"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.jpeg" width="1280" height="720"/>
+        <image name="tuna.jpeg" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
