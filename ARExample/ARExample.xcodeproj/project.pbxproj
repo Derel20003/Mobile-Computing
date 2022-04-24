@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */; };
+		8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC428145AFC00DE5902 /* Model.swift */; };
 		F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026BD27F2189500A8708B /* AppDelegate.swift */; };
 		F43026C027F2189500A8708B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026BF27F2189500A8708B /* ViewController.swift */; };
 		F43026C227F2189500A8708B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F43026C127F2189500A8708B /* Experience.rcproject */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGeoAnchor.swift; sourceTree = "<group>"; };
+		8AD6CCC428145AFC00DE5902 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F43026BA27F2189500A8708B /* ARExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43026BD27F2189500A8708B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43026BF27F2189500A8708B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		F43026BC27F2189500A8708B /* ARExample */ = {
 			isa = PBXGroup;
 			children = (
+				8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */,
 				F43026BD27F2189500A8708B /* AppDelegate.swift */,
 				F43026BF27F2189500A8708B /* ViewController.swift */,
 				F43026C127F2189500A8708B /* Experience.rcproject */,
@@ -70,6 +75,7 @@
 				F43026C627F2189600A8708B /* Assets.xcassets */,
 				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */,
+				8AD6CCC428145AFC00DE5902 /* Model.swift */,
 			);
 			path = ARExample;
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */,
 				F43026C027F2189500A8708B /* ViewController.swift in Sources */,
 				F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */,
 				F43026C227F2189500A8708B /* Experience.rcproject in Sources */,
+				8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */,
 				F43026D727F221F700A8708B /* OverviewController.swift in Sources */,
 				F43026D527F220E900A8708B /* CompassViewController.swift in Sources */,
 			);

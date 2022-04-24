@@ -36,7 +36,7 @@
                                           "emphasisAnimationType" : "jiggle",
                                           "iterations" : 1,
                                           "target" : [
-                                            "8C869941-65E0-457B-81D0-810D3ECC5ABE"
+
                                           ]
                                         },
                                         "name" : {
@@ -76,7 +76,7 @@
                                 "configuration" : {
                                   "distance" : 0.5,
                                   "target" : [
-                                    "8C869941-65E0-457B-81D0-810D3ECC5ABE"
+
                                   ],
                                   "type" : 0
                                 },
@@ -119,7 +119,7 @@
                                           "emphasisAnimationType" : "float",
                                           "iterations" : 1,
                                           "target" : [
-                                            "8C869941-65E0-457B-81D0-810D3ECC5ABE"
+
                                           ]
                                         },
                                         "name" : {
@@ -158,7 +158,7 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "8C869941-65E0-457B-81D0-810D3ECC5ABE"
+
                                   ]
                                 },
                                 "name" : "tapTarget"
@@ -189,96 +189,8 @@
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
                   "CE1B1D4E-CE60-4A5A-9C60-BDCB39A68DCD" : null,
-                  "ED71975D-63DA-4A80-89F8-C651A96482A9" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "item",
-                          {
-                            "typeName" : "String",
-                            "value" : "Rocket Toy 1"
-                          }
-                        ],
-                        [
-                          "material",
-                          {
-                            "typeName" : "String",
-                            "value" : "standard"
-                          }
-                        ],
-                        [
-                          "style",
-                          {
-                            "typeName" : "String",
-                            "value" : "Stylized"
-                          }
-                        ]
-                      ],
-                      "children" : {
-                        "iconicItem" : {
-                          "overrides" : {
-                            "factory" : null,
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "8AAD9E74-23F8-4FFC-BD29-66B5186C41BF"
-                                }
-                              ]
-                            ]
-                          }
-                        },
-                        "item" : {
-                          "overrides" : {
-                            "factory" : null,
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "3B730D5D-B2B5-4EA8-88F7-2ED718B1B275"
-                                }
-                              ]
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.rc.af.RocketToy1.8462e0c5-2be6-4d86-85da-eb2ac1a3cc5d",
-                        "version" : "1.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "8C869941-65E0-457B-81D0-810D3ECC5ABE"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1
-                      ]
-                    }
-                  }
+                  "E8A9A815-28C5-4010-A4F1-17088F6EFC38" : null,
+                  "ED71975D-63DA-4A80-89F8-C651A96482A9" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -295,21 +207,21 @@
               "title" : "Box",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99999994039535522,
+                  0.98843711614608765,
+                  -4.5387774094685085e-10,
+                  0.15163171291351318,
                   0,
+                  0.069197550415992737,
+                  0.88979893922805786,
+                  -0.45107591152191162,
                   0,
+                  -0.13492174446582794,
+                  0.45635268092155457,
+                  0.87951022386550903,
                   0,
-                  0,
-                  0.80754852294921875,
-                  -0.58980095386505127,
-                  0,
-                  0,
-                  0.58980095386505127,
-                  0.80754852294921875,
-                  0,
-                  0,
-                  1.135667085647583,
-                  1.5549418926239014,
+                  -0.2329137921333313,
+                  0.83769106864929199,
+                  1.6901382207870483,
                   1
                 ],
                 "sceneTransform" : [

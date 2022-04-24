@@ -11,6 +11,8 @@ import RealityKit
 class ViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
+    let model: Model = Model();
+    var timer: Timer?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +20,16 @@ class ViewController: UIViewController {
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
         
+        //model.addAnchor(toAdd: )
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateGeoAnchors), userInfo: nil, repeats: true)
+        
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+        
+    }
+    
+    @objc func updateGeoAnchors() {
+        print("test")
     }
     
 }
