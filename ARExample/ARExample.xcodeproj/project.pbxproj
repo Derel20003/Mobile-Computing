@@ -16,6 +16,7 @@
 		F43026D527F220E900A8708B /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026D427F220E900A8708B /* CompassViewController.swift */; };
 		F43026D727F221F700A8708B /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026D627F221F700A8708B /* OverviewController.swift */; };
 		F4424C6127F44BC5008F80D4 /* Simple_compass_rose.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */; };
+		F45376622815BE9200224816 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45376612815BE9200224816 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F43026D427F220E900A8708B /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		F43026D627F221F700A8708B /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simple_compass_rose.svg.png; sourceTree = "<group>"; };
+		F45376612815BE9200224816 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F43026C327F2189500A8708B /* Main.storyboard */,
 				F43026D627F221F700A8708B /* OverviewController.swift */,
 				F43026D427F220E900A8708B /* CompassViewController.swift */,
+				F45376612815BE9200224816 /* LocationViewController.swift */,
 				F43026C627F2189600A8708B /* Assets.xcassets */,
 				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */,
@@ -149,6 +152,7 @@
 				F43026C027F2189500A8708B /* ViewController.swift in Sources */,
 				F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */,
 				F43026C227F2189500A8708B /* Experience.rcproject in Sources */,
+				F45376622815BE9200224816 /* LocationViewController.swift in Sources */,
 				F43026D727F221F700A8708B /* OverviewController.swift in Sources */,
 				F43026D527F220E900A8708B /* CompassViewController.swift in Sources */,
 			);

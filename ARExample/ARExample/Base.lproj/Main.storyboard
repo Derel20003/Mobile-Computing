@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1w-0B-cFv">
-                                <rect key="frame" x="168" y="371" width="78" height="31"/>
+                                <rect key="frame" x="167.5" y="371" width="79" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="AR View"/>
                                 <connections>
@@ -47,12 +47,23 @@
                                     <segue destination="atp-D2-ivm" kind="show" identifier="showCompassViewSegue" id="CDt-aA-Gdk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ja-sR-S3Y">
+                                <rect key="frame" x="167.5" y="567" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Location"/>
+                                <connections>
+                                    <segue destination="WBQ-r2-G3o" kind="show" identifier="showLocationViewSegue" id="fPz-sa-tJK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JzN-zK-YyE"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1ja-sR-S3Y" firstAttribute="centerX" secondItem="4iE-HF-alI" secondAttribute="centerX" id="5RJ-cq-VKX"/>
                             <constraint firstItem="4iE-HF-alI" firstAttribute="centerX" secondItem="K1w-0B-cFv" secondAttribute="centerX" constant="0.5" id="JgH-6b-3Cp"/>
                             <constraint firstItem="4iE-HF-alI" firstAttribute="centerX" secondItem="pyL-YG-WG8" secondAttribute="centerX" constant="0.5" id="JlC-2u-eYL"/>
+                            <constraint firstItem="1ja-sR-S3Y" firstAttribute="top" secondItem="4iE-HF-alI" secondAttribute="bottom" constant="64" id="LLm-0U-uSq"/>
+                            <constraint firstItem="1ja-sR-S3Y" firstAttribute="leading" secondItem="K1w-0B-cFv" secondAttribute="leading" id="YLL-Rt-bjw"/>
                             <constraint firstItem="K1w-0B-cFv" firstAttribute="top" secondItem="JzN-zK-YyE" secondAttribute="top" constant="283" id="dA4-ET-7Sh"/>
                             <constraint firstItem="4iE-HF-alI" firstAttribute="centerY" secondItem="K1w-0B-cFv" secondAttribute="centerY" constant="101" id="yaQ-wf-Sfc"/>
                         </constraints>
@@ -62,6 +73,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJa-wD-vZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1062.3188405797102" y="-156.02678571428569"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="QOM-H4-l0a">
+            <objects>
+                <viewController id="WBQ-r2-G3o" customClass="LocationViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nEc-Ux-AMS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruy-iN-Jjz">
+                                <rect key="frame" x="94" y="423" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rf-ry-B6m">
+                                <rect key="frame" x="234" y="423" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl5-uX-1w8">
+                                <rect key="frame" x="94" y="452" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUM-7c-sHY">
+                                <rect key="frame" x="234" y="452" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="KpJ-fx-9gx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dVT-Pr-7Ip"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TUM-7c-sHY" firstAttribute="leading" secondItem="2rf-ry-B6m" secondAttribute="leading" id="CJe-bF-tVh"/>
+                            <constraint firstItem="2rf-ry-B6m" firstAttribute="baseline" secondItem="Ruy-iN-Jjz" secondAttribute="baseline" id="ILx-Eb-KVj"/>
+                            <constraint firstItem="Vl5-uX-1w8" firstAttribute="baseline" secondItem="TUM-7c-sHY" secondAttribute="baseline" id="JsM-Cn-R8P"/>
+                            <constraint firstItem="dVT-Pr-7Ip" firstAttribute="bottom" secondItem="Vl5-uX-1w8" secondAttribute="bottom" constant="389" id="UbP-4j-sjL"/>
+                            <constraint firstItem="TUM-7c-sHY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vl5-uX-1w8" secondAttribute="trailing" constant="8" symbolic="YES" id="aBs-Gf-cbb"/>
+                            <constraint firstItem="Vl5-uX-1w8" firstAttribute="leading" secondItem="dVT-Pr-7Ip" secondAttribute="leading" constant="94" id="pj1-sy-80N"/>
+                            <constraint firstItem="2rf-ry-B6m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ruy-iN-Jjz" secondAttribute="trailing" constant="8" symbolic="YES" id="qrs-N5-ICJ"/>
+                            <constraint firstItem="Vl5-uX-1w8" firstAttribute="top" secondItem="Ruy-iN-Jjz" secondAttribute="bottom" constant="8" symbolic="YES" id="tYd-qb-nur"/>
+                            <constraint firstItem="TUM-7c-sHY" firstAttribute="trailing" secondItem="2rf-ry-B6m" secondAttribute="trailing" id="urD-1W-SUW"/>
+                            <constraint firstItem="dVT-Pr-7Ip" firstAttribute="trailing" secondItem="2rf-ry-B6m" secondAttribute="trailing" constant="93" id="vRM-Jh-Mu9"/>
+                            <constraint firstItem="Vl5-uX-1w8" firstAttribute="leading" secondItem="Ruy-iN-Jjz" secondAttribute="leading" id="yyt-qB-1WL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KUb-cn-MBb"/>
+                    <connections>
+                        <outlet property="latitudeField" destination="TUM-7c-sHY" id="OdQ-j4-l0k"/>
+                        <outlet property="longitudeField" destination="2rf-ry-B6m" id="kJr-QF-Ow9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3F-ls-LFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.17391304347828" y="203.57142857142856"/>
         </scene>
         <!--Compass View Controller-->
         <scene sceneID="o37-xN-ghM">
@@ -102,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC2-kl-AMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250.72463768115944" y="172.76785714285714"/>
+            <point key="canvasLocation" x="386" y="-156"/>
         </scene>
         <!--ARView-->
         <scene sceneID="tne-QT-ifu">
