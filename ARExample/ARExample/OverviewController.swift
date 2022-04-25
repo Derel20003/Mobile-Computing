@@ -19,6 +19,8 @@ class OverviewController: UIViewController {
             _ = segue.destination as? ViewController
         } else if segue.identifier == "showCompassViewSegue" {
             _ = segue.destination as? CompassViewController
+        } else if segue.identifier == "showLocationViewSegue" {
+            _ = segue.destination as? LocationViewController
         }
     }
 
