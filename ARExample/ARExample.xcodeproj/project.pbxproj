@@ -19,6 +19,8 @@
 		F43026D727F221F700A8708B /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026D627F221F700A8708B /* OverviewController.swift */; };
 		F4424C6127F44BC5008F80D4 /* Simple_compass_rose.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */; };
 		F45376622815BE9200224816 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45376612815BE9200224816 /* LocationViewController.swift */; };
+		F4F4C4A9281697980057BBDC /* Schilder.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C4A7281697980057BBDC /* Schilder.rcproject */; };
+		F4F4C4AA281697980057BBDC /* Eingang.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C4A8281697980057BBDC /* Eingang.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F43026D627F221F700A8708B /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simple_compass_rose.svg.png; sourceTree = "<group>"; };
 		F45376612815BE9200224816 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		F4F4C4A7281697980057BBDC /* Schilder.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Schilder.rcproject; path = ARExample/Schilder.rcproject; sourceTree = SOURCE_ROOT; };
+		F4F4C4A8281697980057BBDC /* Eingang.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Eingang.rcproject; path = ARExample/Eingang.rcproject; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				F43026BD27F2189500A8708B /* AppDelegate.swift */,
 				F43026BF27F2189500A8708B /* ViewController.swift */,
 				F43026C127F2189500A8708B /* Experience.rcproject */,
+				F4F4C4A8281697980057BBDC /* Eingang.rcproject */,
+				F4F4C4A7281697980057BBDC /* Schilder.rcproject */,
 				F43026C327F2189500A8708B /* Main.storyboard */,
 				F43026D627F221F700A8708B /* OverviewController.swift */,
 				F43026D427F220E900A8708B /* CompassViewController.swift */,
@@ -159,6 +165,8 @@
 				F43026C027F2189500A8708B /* ViewController.swift in Sources */,
 				F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */,
 				F43026C227F2189500A8708B /* Experience.rcproject in Sources */,
+				F4F4C4AA281697980057BBDC /* Eingang.rcproject in Sources */,
+				F4F4C4A9281697980057BBDC /* Schilder.rcproject in Sources */,
 				8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */,
 				F45376622815BE9200224816 /* LocationViewController.swift in Sources */,
 				F43026D727F221F700A8708B /* OverviewController.swift in Sources */,
