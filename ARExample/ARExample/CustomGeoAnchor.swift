@@ -14,8 +14,8 @@ class CustomGeoAnchor {
     var anchor: String;
     
     init(_ anchor: String, _ lat: Double, _ long: Double) {
-        self.lat = lat
-        self.long = long
+        self.lat = round(Double(lat) * 10000) / 10000
+        self.long = round(Double(long) * 10000) / 10000
         self.anchor = anchor
     }
     

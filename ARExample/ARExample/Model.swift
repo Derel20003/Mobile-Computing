@@ -10,6 +10,7 @@ import RealityKit
 
 class Model {
     var objects: [CustomGeoAnchor] = [];
+    let path: String = "http://193.122.3.31/anchors"
     
     func addAnchor (toAdd anchor: CustomGeoAnchor) {
         objects.append(anchor)
@@ -23,6 +24,16 @@ class Model {
             }
         }
         return anchors
+    }
+    
+    func loadAnchors() {
+        if let data = try? Data(contentsOf: URL(string: path)!) {
+            if let obj = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
+                for anchor in obj {
+                    addAnchor(toAdd: CustomGeoAnchor(anchor["type"] as! String, anchor["lat"] as! Double, anchor["long"]  as! Double))
+                }
+            }
+        }
     }
     
 }

@@ -187,7 +187,7 @@
                     </arView>
                     <navigationItem key="navigationItem" id="aAr-wY-vjF"/>
                     <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                        <outlet property="arView" destination="8bC-Xf-vdC" id="uNC-g4-msM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

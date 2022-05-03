@@ -26,19 +26,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         self.locationManager.startUpdatingLocation()
         self.locationManager.desiredAccuracy=kCLLocationAccuracyBest
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        //let boxAnchor = try! Experience.loadBox()
-        //let a = try! Eingang.loadBox()
-        //let b = try! Schilder.loadBox()
-        
-        model.addAnchor(toAdd: CustomGeoAnchor("Eingang", 48.2683, 14.2521))
-        model.addAnchor(toAdd: CustomGeoAnchor("Schilder", 48.2682, 14.2523))
-        
-        //model.addAnchor(toAdd: )
-        
-        // Add the box anchor to the scene
-        //arView.scene.anchors.append(boxAnchor)
+
+        model.loadAnchors()
+    
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations newLocations: [CLLocation]) {
