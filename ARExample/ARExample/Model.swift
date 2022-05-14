@@ -11,6 +11,8 @@ import RealityKit
 class Model {
     var objects: [CustomGeoAnchor] = [];
     let path: String = "http://193.122.3.31/anchors"
+    // Temporary
+    let models = ["Eingang": Eingang.self]
     
     func addAnchor (toAdd anchor: CustomGeoAnchor) {
         objects.append(anchor)

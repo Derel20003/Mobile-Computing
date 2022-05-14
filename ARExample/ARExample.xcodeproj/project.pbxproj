@@ -82,8 +82,8 @@
 				F43026D427F220E900A8708B /* CompassViewController.swift */,
 				F45376612815BE9200224816 /* LocationViewController.swift */,
 				F43026C627F2189600A8708B /* Assets.xcassets */,
-				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */,
+				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				8AD6CCC428145AFC00DE5902 /* Model.swift */,
 			);
 			path = ARExample;
