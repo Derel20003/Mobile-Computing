@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A5761BC28300EAD00512F9A /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5761BB28300EAD00512F9A /* right-arrow.png */; };
 		8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */; };
 		8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC428145AFC00DE5902 /* Model.swift */; };
 		F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026BD27F2189500A8708B /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A5761BB28300EAD00512F9A /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGeoAnchor.swift; sourceTree = "<group>"; };
 		8AD6CCC428145AFC00DE5902 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F43026BA27F2189500A8708B /* ARExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 				F45376612815BE9200224816 /* LocationViewController.swift */,
 				F43026C627F2189600A8708B /* Assets.xcassets */,
 				F4424C6027F44BC5008F80D4 /* Simple_compass_rose.svg.png */,
+				8A5761BB28300EAD00512F9A /* right-arrow.png */,
 				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				8AD6CCC428145AFC00DE5902 /* Model.swift */,
 			);
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5761BC28300EAD00512F9A /* right-arrow.png in Resources */,
 				F43026CA27F2189600A8708B /* LaunchScreen.storyboard in Resources */,
 				F43026C727F2189600A8708B /* Assets.xcassets in Resources */,
 				F43026C527F2189500A8708B /* Main.storyboard in Resources */,
