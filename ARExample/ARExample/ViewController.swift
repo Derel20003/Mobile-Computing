@@ -47,10 +47,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     box = try! Schilder.loadBox()
                 }
                 
-                // als Scene.AnchorCollection.Element speichern und dann reanchor verwenden
-                
-                //box.reanchor(.plane(.any, classification: .floor, minimumBounds: [0.1, 0.1]), preservingWorldTransform: false)
-            
                 arView.scene.anchors.append(box);
             }
         }

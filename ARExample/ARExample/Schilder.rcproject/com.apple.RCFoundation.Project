@@ -21,6 +21,173 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
+                  "2B3A13D6-B3D8-4BBF-B3E9-737EF6E3ED36" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "backgroundColors",
+                          {
+                            "typeName" : "String",
+                            "value" : "5"
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.65500000000000003
+                          }
+                        ],
+                        [
+                          "mounting",
+                          {
+                            "typeName" : "String",
+                            "value" : "single"
+                          }
+                        ],
+                        [
+                          "poleHeight",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1.2190000000000001
+                          }
+                        ],
+                        [
+                          "symbolColors",
+                          {
+                            "typeName" : "String",
+                            "value" : "1"
+                          }
+                        ],
+                        [
+                          "text",
+                          {
+                            "typeName" : "String",
+                            "value" : "Zum Eingang\n"
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "square"
+                          }
+                        ],
+                        [
+                          "width",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1.0800000000000001
+                          }
+                        ]
+                      ],
+                      "children" : {
+                        "squareNoEditBorder_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "E75FB2B6-C07D-46CD-B8BF-1B8A7DA83E26"
+                                }
+                              ]
+                            ]
+                          }
+                        },
+                        "squareNoEditFace_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "8DE00752-02AC-496E-BC19-E0A45F2188C2"
+                                }
+                              ]
+                            ]
+                          }
+                        },
+                        "squareNoEditGround_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "A22B662F-E38E-42A7-83AF-DEFE565B62C8"
+                                }
+                              ]
+                            ]
+                          }
+                        },
+                        "squareNoEditSingle0" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "EB5266E6-DB33-4325-A2DA-57744472E9F6"
+                                }
+                              ]
+                            ]
+                          }
+                        },
+                        "squareText_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "A6F97A64-A7CA-4C74-A054-AFD51B6981AA"
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.SignAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "1F312D24-47B0-45FB-81F5-8E656E0F9710"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.0018609912367537618,
+                        2.3841860752327193e-07,
+                        0.0099143693223595619,
+                        1
+                      ]
+                    }
+                  },
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
                   "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
@@ -114,7 +281,7 @@
                           "text",
                           {
                             "typeName" : "String",
-                            "value" : "Zum Eingang"
+                            "value" : ""
                           }
                         ],
                         [
@@ -190,21 +357,21 @@
               "title" : "Box",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99999946355819702,
-                  -1.818989620386291e-12,
-                  -0.001069568214006722,
+                  0.99999821186065674,
+                  -1.8189892951256392e-12,
+                  0.0018601180054247379,
                   0,
-                  -0.00060955452499911189,
+                  0.0010600944515317678,
                   0.8217090368270874,
-                  -0.56990677118301392,
+                  -0.56990611553192139,
                   0,
-                  0.00087887374684214592,
+                  -0.0015284758992493153,
                   0.56990712881088257,
-                  0.82170850038528442,
+                  0.82170760631561279,
                   0,
-                  0.0016913195140659809,
-                  1.0973724126815796,
-                  1.58130943775177,
+                  -0.009142494760453701,
+                  3.4108383655548096,
+                  4.9149994850158691,
                   1
                 ],
                 "sceneTransform" : [
