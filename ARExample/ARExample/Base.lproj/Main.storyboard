@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8CR-JF-eyS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yzl-pm-Bvw">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -37,7 +37,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="AR View"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showARViewSegue" id="Fyu-hF-IGx"/>
+                                    <segue destination="8CR-JF-eyS" kind="show" id="mHF-YZ-eqm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-HF-alI">
@@ -249,6 +249,7 @@
                             <constraint firstItem="2D1-WP-26P" firstAttribute="centerY" secondItem="JA8-3N-3Ip" secondAttribute="centerY" id="vOT-SS-5mq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xSI-vL-WL1"/>
                     <connections>
                         <outlet property="arView" destination="UeD-50-ymw" id="bc5-Gy-HSN"/>
                         <outlet property="arrow" destination="JA8-3N-3Ip" id="NiA-eN-0Zq"/>
@@ -264,11 +265,11 @@
             <objects>
                 <viewController id="wWA-aL-rPN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5nq-Vu-CKb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-9Z-jmz">
-                                <rect key="frame" x="16" y="40" width="343" height="587"/>
+                                <rect key="frame" x="16" y="84" width="343" height="563"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-C3-vno">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="1076"/>

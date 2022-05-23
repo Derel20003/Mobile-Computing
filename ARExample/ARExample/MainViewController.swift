@@ -65,16 +65,31 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 var box: Scene.AnchorCollection.Element = try! Experience.loadBox();
                 if (anchor == "Eingang") {
                     box = try! Eingang.loadBox()
+                    let newBox: Eingang.Box = try? box as! Eingang.Box;
+                    newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 } else if (anchor == "Schilder") {
                     box = try! Schilder.loadBox()
+                    let newBox: Schilder.Box = try? box as! Schilder.Box;
+                    newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 }
                 
-                arView.scene.anchors.append(box);
+                arView.scene.anchors.append(box)
             }
         }
         shown.removeAll()
         shown.append(contentsOf: newShown)
         newShown.removeAll()
+        
+    }
+    
+    func handleTapOnEntity (_ entity: Entity?) {
+        guard let entity = entity else {
+            return
+        }
+        
+        let alert = UIAlertController(title: "Alert", message: "ARAnchor tapped", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
     
