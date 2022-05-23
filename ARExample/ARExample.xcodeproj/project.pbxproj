@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE5801D283BD34D00DC58A1 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5801C283BD34D00DC58A1 /* DescriptionViewController.swift */; };
 		8A5761BC28300EAD00512F9A /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5761BB28300EAD00512F9A /* right-arrow.png */; };
 		8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */; };
 		8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC428145AFC00DE5902 /* Model.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FE5801C283BD34D00DC58A1 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		8A5761BB28300EAD00512F9A /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGeoAnchor.swift; sourceTree = "<group>"; };
 		8AD6CCC428145AFC00DE5902 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				F43026C827F2189600A8708B /* LaunchScreen.storyboard */,
 				8AD6CCC428145AFC00DE5902 /* Model.swift */,
 				F4F3031028329773008AC11C /* MainViewController.swift */,
+				1FE5801C283BD34D00DC58A1 /* DescriptionViewController.swift */,
 			);
 			path = ARExample;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */,
 				F4F303132832E085008AC11C /* AnchorDescription.swift in Sources */,
+				1FE5801D283BD34D00DC58A1 /* DescriptionViewController.swift in Sources */,
 				F4F3031128329773008AC11C /* MainViewController.swift in Sources */,
 				F43026C027F2189500A8708B /* ViewController.swift in Sources */,
 				F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */,
@@ -329,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZKJY7V5R6Y;
+				DEVELOPMENT_TEAM = ZT382UM82X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location access to use the app";
@@ -362,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZKJY7V5R6Y;
+				DEVELOPMENT_TEAM = ZT382UM82X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location access to use the app";

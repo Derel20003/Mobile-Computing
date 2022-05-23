@@ -178,23 +178,6 @@
             </objects>
             <point key="canvasLocation" x="386" y="-156"/>
         </scene>
-        <!--ARView-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arView>
-                    <navigationItem key="navigationItem" id="aAr-wY-vjF"/>
-                    <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="uNC-g4-msM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-252" y="-468"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="fES-Ec-kDD">
             <objects>
@@ -213,34 +196,29 @@
                                     <constraint firstAttribute="height" constant="60" id="Dgd-2Z-ZSE"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYl-58-naC">
-                                <rect key="frame" x="232" y="318" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="wWA-aL-rPN" kind="show" id="k5R-s9-vw9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-WP-26P">
-                                <rect key="frame" x="80" y="572" width="42.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0p-ie-Lqc">
                                 <rect key="frame" x="142" y="571.5" width="91.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next Sight"/>
+                                <connections>
+                                    <action selector="onNextTouchUpInside:" destination="8CR-JF-eyS" eventType="touchUpInside" id="fyX-fn-lEf"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-WP-26P">
+                                <rect key="frame" x="45" y="572" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h0J-hB-xi3"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UeD-50-ymw" firstAttribute="trailing" secondItem="h0J-hB-xi3" secondAttribute="trailing" id="2J6-Et-OAp"/>
+                            <constraint firstItem="E0p-ie-Lqc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2D1-WP-26P" secondAttribute="trailing" constant="8" symbolic="YES" id="EGZ-l4-hBI"/>
                             <constraint firstItem="h0J-hB-xi3" firstAttribute="trailing" secondItem="JA8-3N-3Ip" secondAttribute="trailing" constant="80" id="EqX-ON-DD5"/>
                             <constraint firstItem="JA8-3N-3Ip" firstAttribute="top" secondItem="UeD-50-ymw" secondAttribute="bottom" constant="50" id="Fbk-cQ-UAH"/>
-                            <constraint firstItem="2D1-WP-26P" firstAttribute="leading" secondItem="h0J-hB-xi3" secondAttribute="leading" constant="80" id="R8e-wX-fgP"/>
+                            <constraint firstItem="2D1-WP-26P" firstAttribute="leading" secondItem="h0J-hB-xi3" secondAttribute="leading" constant="45" id="R8e-wX-fgP"/>
                             <constraint firstItem="E0p-ie-Lqc" firstAttribute="centerX" secondItem="XQT-aN-6cW" secondAttribute="centerX" id="Xzv-JF-Rzs"/>
                             <constraint firstItem="UeD-50-ymw" firstAttribute="leading" secondItem="h0J-hB-xi3" secondAttribute="leading" id="bAG-m1-wKi"/>
                             <constraint firstItem="E0p-ie-Lqc" firstAttribute="centerY" secondItem="JA8-3N-3Ip" secondAttribute="centerY" id="dFj-IC-8Td"/>
@@ -254,16 +232,18 @@
                         <outlet property="arView" destination="UeD-50-ymw" id="bc5-Gy-HSN"/>
                         <outlet property="arrow" destination="JA8-3N-3Ip" id="NiA-eN-0Zq"/>
                         <outlet property="distanceField" destination="2D1-WP-26P" id="nMy-dc-tsy"/>
+                        <outlet property="nextButton" destination="E0p-ie-Lqc" id="oe0-E8-ThT"/>
+                        <segue destination="wWA-aL-rPN" kind="show" identifier="showDescription" id="2ql-4r-Hb7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UP-VN-AmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-421.60000000000002" y="-1141.0794602698652"/>
+            <point key="canvasLocation" x="-652" y="-1141.0794602698652"/>
         </scene>
-        <!--View Controller-->
+        <!--Description View Controller-->
         <scene sceneID="hQo-Y9-9pg">
             <objects>
-                <viewController id="wWA-aL-rPN" sceneMemberID="viewController">
+                <viewController id="wWA-aL-rPN" customClass="DescriptionViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5nq-Vu-CKb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,8 +254,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-C3-vno">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="1076"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eingang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXV-kG-cxa">
-                                                <rect key="frame" x="10" y="20" width="114" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXV-kG-cxa">
+                                                <rect key="frame" x="10" y="20" width="102" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -304,8 +284,10 @@
                                             <constraint firstItem="cIr-3o-4SA" firstAttribute="leading" secondItem="3eg-C3-vno" secondAttribute="leading" constant="10" id="A7q-9U-h53"/>
                                             <constraint firstItem="fWP-Mo-Sff" firstAttribute="leading" secondItem="3eg-C3-vno" secondAttribute="leading" constant="10" id="FUF-1A-nic"/>
                                             <constraint firstAttribute="trailing" secondItem="fWP-Mo-Sff" secondAttribute="trailing" constant="20" id="Og3-VO-jIq"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cIr-3o-4SA" secondAttribute="trailing" constant="20" symbolic="YES" id="Y1G-js-a5Z"/>
                                             <constraint firstItem="BXV-kG-cxa" firstAttribute="leading" secondItem="3eg-C3-vno" secondAttribute="leading" constant="10" id="fyw-3T-N4A"/>
                                             <constraint firstItem="fWP-Mo-Sff" firstAttribute="top" secondItem="cIr-3o-4SA" secondAttribute="bottom" constant="25" id="qrL-xJ-ODU"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BXV-kG-cxa" secondAttribute="trailing" constant="20" symbolic="YES" id="xLR-Es-vY8"/>
                                             <constraint firstAttribute="bottom" secondItem="fWP-Mo-Sff" secondAttribute="bottom" constant="20" id="ziF-b7-jWc"/>
                                         </constraints>
                                     </view>
@@ -330,6 +312,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NCd-Ft-yJO"/>
+                    <connections>
+                        <outlet property="coordsLabel" destination="cIr-3o-4SA" id="JXS-Rl-WNm"/>
+                        <outlet property="descriptionLabel" destination="fWP-Mo-Sff" id="6L3-qJ-cT4"/>
+                        <outlet property="titleLabel" destination="BXV-kG-cxa" id="mxn-2D-8ic"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVW-TH-i1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

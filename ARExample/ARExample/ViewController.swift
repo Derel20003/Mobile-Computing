@@ -33,9 +33,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations newLocations: [CLLocation]) {
         guard let location: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        let anchors = model.updateAnchors(location.latitude, location.longitude)
+        let anchors = model.shouldPlaceAnchor(location.latitude, location.longitude)
         arView.scene.anchors.removeAll()
-        for anchor in anchors {
+        /*for anchor in anchors {
             newShown.append(anchor)
             if (!shown.contains(anchor)) {
                 alert()
@@ -49,7 +49,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 arView.scene.anchors.append(box);
             }
-        }
+        }*/
         shown.removeAll()
         shown.append(contentsOf: newShown)
         newShown.removeAll()

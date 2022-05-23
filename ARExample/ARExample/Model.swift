@@ -11,6 +11,7 @@ import RealityKit
 public class Model {
     var objects: [CustomGeoAnchor] = [];
     var descriptions: [AnchorDescription] = [];
+    var current = 1;
     let anchorPath: String = "http://193.122.3.31/anchors"
     let descriptionPath: String = "http://193.122.3.31/descriptions"
     // Temporary
@@ -24,14 +25,17 @@ public class Model {
         descriptions.append(description)
     }
     
-    func updateAnchors (_ lat: Double, _ long: Double) -> [String] {
-        var anchors: [String] = []
+    func shouldPlaceAnchor (_ lat: Double, _ long: Double) -> String? {
+        return getCurrent()?.update(lat, long)
+    }
+    
+    func getCurrent() -> CustomGeoAnchor? {
         for anchor in objects {
-            if let a = anchor.update(lat, long) {
-                anchors.append(a)
+            if anchor.order == current {
+                return anchor
             }
         }
-        return anchors
+        return nil
     }
     
     // get list of anchors
@@ -39,7 +43,7 @@ public class Model {
         if let data = try? Data(contentsOf: URL(string: anchorPath)!) {
             if let obj = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
                 for anchor in obj {
-                    addAnchor(toAdd: CustomGeoAnchor(anchor["type"] as! String, anchor["lat"] as! Double, anchor["long"]  as! Double))
+                    addAnchor(toAdd: CustomGeoAnchor(anchor["type"] as! String, anchor["lat"] as! Double, anchor["long"]  as! Double, anchor["order"] as! Int))
                 }
             }
         }
