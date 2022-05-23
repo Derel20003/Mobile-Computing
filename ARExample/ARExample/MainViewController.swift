@@ -65,11 +65,11 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 var box: Scene.AnchorCollection.Element = try! Experience.loadBox();
                 if (anchor == "Eingang") {
                     box = try! Eingang.loadBox()
-                    let newBox: Eingang.Box = try? box as! Eingang.Box;
+                    let newBox: Eingang.Box = try! box as! Eingang.Box;
                     newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 } else if (anchor == "Schilder") {
                     box = try! Schilder.loadBox()
-                    let newBox: Schilder.Box = try? box as! Schilder.Box;
+                    let newBox: Schilder.Box = try! box as! Schilder.Box;
                     newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 }
                 
