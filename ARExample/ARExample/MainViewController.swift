@@ -36,6 +36,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         model.loadAnchors()
+        model.loadDescriptions()
 
     }
     
@@ -125,16 +126,15 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         let degreesToPoint = atan2(dy, dx);
         
         dir += degreesToPoint - 90;
-        
-        print(dir)
+        dir = dir.truncatingRemainder(dividingBy: 360);
 
         arrow.transform = CGAffineTransform(rotationAngle: CGFloat(-round(dir)*Double.pi/180))
 
     }
     
     func alert () {
-        let alert = UIAlertController(title: "Alert", message: "ARAnchor placed", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        let alert = UIAlertController(title: "Found Anchor", message: "You have found the anchor", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Place", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
