@@ -86,6 +86,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func switchControls() {
+        if model.lastAnchorPlaced {
+            nextButton.setTitle("Finish", for: .normal)
+            self.performSegue(withIdentifier: "finished", sender: self)
+        }
         nextButton.isHidden = !nextButton.isHidden
         distanceField.isHidden = !distanceField.isHidden
         arrow.isHidden = !arrow.isHidden
@@ -108,8 +112,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let descrView = segue.destination as? DescriptionViewController;
-        descrView?.model = model;
+        if segue.identifier == "finished" {
+            _ = segue.destination as? FinalViewController;
+        } else {
+            let descrView = segue.destination as? DescriptionViewController;
+            descrView?.model = model;
+        }
     }
     
     // updates direction of arrow

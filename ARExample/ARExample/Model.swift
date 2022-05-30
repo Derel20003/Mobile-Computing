@@ -12,6 +12,7 @@ public class Model {
     var objects: [CustomGeoAnchor] = [];
     var descriptions: [AnchorDescription] = [];
     var current = 1;
+    var lastAnchorPlaced = false;
     let anchorPath: String = "http://193.122.3.31/anchors"
     let descriptionPath: String = "http://193.122.3.31/descriptions"
     // Temporary
@@ -32,6 +33,9 @@ public class Model {
     func getCurrent() -> CustomGeoAnchor? {
         for anchor in objects {
             if anchor.order == current {
+                if anchor.order == objects.count {
+                    lastAnchorPlaced = true
+                }
                 return anchor
             }
         }

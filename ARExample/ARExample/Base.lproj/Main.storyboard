@@ -202,6 +202,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Next Sight"/>
                                 <connections>
                                     <action selector="onNextTouchUpInside:" destination="8CR-JF-eyS" eventType="touchUpInside" id="fyX-fn-lEf"/>
+                                    <segue destination="sr6-aE-tpH" kind="show" identifier="" id="u4A-c1-upD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-WP-26P">
@@ -239,6 +240,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UP-VN-AmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-652" y="-1141.0794602698652"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="dhj-4E-54V">
+            <objects>
+                <viewController id="sr6-aE-tpH" customClass="FinalViewController" customModule="ARExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ha-7e-Nhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratulation! Du hast alle Punkte gefunden." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rim-KF-OBJ">
+                                <rect key="frame" x="29" y="323" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZsF-cY-myk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rim-KF-OBJ" firstAttribute="leading" secondItem="ZsF-cY-myk" secondAttribute="leading" constant="29" id="15a-YA-8Lg"/>
+                            <constraint firstItem="ZsF-cY-myk" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rim-KF-OBJ" secondAttribute="trailing" symbolic="YES" id="cxQ-bX-657"/>
+                            <constraint firstItem="rim-KF-OBJ" firstAttribute="centerY" secondItem="3Ha-7e-Nhx" secondAttribute="centerY" id="sNk-pJ-6NM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LM9-BG-4cZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROi-Qf-eEm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="-1497"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="hQo-Y9-9pg">
@@ -320,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVW-TH-i1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="-1141.0794602698652"/>
+            <point key="canvasLocation" x="385" y="-833"/>
         </scene>
     </scenes>
     <resources>
