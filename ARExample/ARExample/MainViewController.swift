@@ -22,7 +22,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     let model: Model = Model();
     var shown = false;
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,7 +87,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     func switchControls() {
         if model.lastAnchorPlaced {
             nextButton.setTitle("Finish", for: .normal)
-            self.performSegue(withIdentifier: "finished", sender: self)
         }
         nextButton.isHidden = !nextButton.isHidden
         distanceField.isHidden = !distanceField.isHidden
@@ -96,6 +94,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func onNextTouchUpInside(_ sender: Any) {
+        if model.lastAnchorPlaced {
+            self.performSegue(withIdentifier: "finished", sender: self)
+            return
+        }
         model.current += 1;
         self.shown = false;
         self.arView.scene.anchors.removeAll();
@@ -114,7 +116,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "finished" {
             _ = segue.destination as? FinalViewController;
-        } else {
+        } else if segue.identifier == "showDescription" {
             let descrView = segue.destination as? DescriptionViewController;
             descrView?.model = model;
         }
