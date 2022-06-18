@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DescriptionViewController: UIViewController {
     
-    var model: Model? = nil;
+    var model: Model? = nil
+    var player: AVAudioPlayer?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var coordsLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var audioButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,35 @@ class DescriptionViewController: UIViewController {
         }
     }
     
+    @IBAction func onTouchUpInside(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            audioButton.setTitle("Play Audio", for: .normal)
+            player.stop()
+        } else {
+            audioButton.setTitle("Stop Audio", for: .normal)
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                
+                let url = Bundle.main.path(forResource: "welcome", ofType: "wav")
+                guard let url = url else {
+                    print("no audio")
+                    return
+                }
+                
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: url))
+                guard let player = player else {
+                    print("no player")
+                    return
+                }
 
+                player.play()
+            } catch {
+                print("audio player error")
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
