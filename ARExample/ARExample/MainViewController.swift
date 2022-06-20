@@ -68,13 +68,21 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 alert()
             
                 var box: Scene.AnchorCollection.Element = try! Experience.loadBox();
-                if (anchor == "Eingang") {
-                    box = try! Eingang.loadBox()
-                    let newBox: Eingang.Box = box as! Eingang.Box;
+                if (anchor == "Freibad") {
+                    box = try! Freibad.loadBox()
+                    let newBox: Freibad.Box = box as! Freibad.Box;
                     newBox.actions.tapped.onAction = handleTapOnEntity(_:);
-                } else if (anchor == "Schilder") {
-                    box = try! Schilder.loadBox()
-                    let newBox: Schilder.Box = box as! Schilder.Box;
+                } else if (anchor == "Asiate") {
+                    box = try! Asiate.loadBox()
+                    let newBox: Asiate.Box = box as! Asiate.Box;
+                    newBox.actions.tapped.onAction = handleTapOnEntity(_:);
+                } else if (anchor == "Genusstreff") {
+                    box = try! Genusstreff.loadBox()
+                    let newBox: Genusstreff.Box = box as! Genusstreff.Box;
+                    newBox.actions.tapped.onAction = handleTapOnEntity(_:);
+                } else if (anchor == "Billa") {
+                    box = try! Billa.loadBox()
+                    let newBox: Billa.Box = box as! Billa.Box;
                     newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 }
                 

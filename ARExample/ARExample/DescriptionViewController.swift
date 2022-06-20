@@ -42,7 +42,12 @@ class DescriptionViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setMode(.default)
                 try AVAudioSession.sharedInstance().setActive(true)
                 
-                let url = Bundle.main.path(forResource: "welcome", ofType: "wav")
+                let audio = model?.getCurrent()?.anchor;
+                guard let audio = audio else {
+                    return
+                }
+                
+                let url = Bundle.main.path(forResource: audio, ofType: "wav")
                 guard let url = url else {
                     print("no audio")
                     return

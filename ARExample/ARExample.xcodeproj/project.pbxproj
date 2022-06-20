@@ -10,6 +10,14 @@
 		1FE5801D283BD34D00DC58A1 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5801C283BD34D00DC58A1 /* DescriptionViewController.swift */; };
 		8A5761BC28300EAD00512F9A /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5761BB28300EAD00512F9A /* right-arrow.png */; };
 		8A598116285E3E460004BC0F /* welcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A598115285E3E460004BC0F /* welcome.wav */; };
+		8A59811E2860E87A0004BC0F /* Billa.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A59811A2860E87A0004BC0F /* Billa.wav */; };
+		8A59811F2860E87A0004BC0F /* Freibad.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A59811B2860E87A0004BC0F /* Freibad.wav */; };
+		8A5981202860E87A0004BC0F /* Genusstreff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A59811C2860E87A0004BC0F /* Genusstreff.wav */; };
+		8A5981212860E87A0004BC0F /* Asiate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A59811D2860E87A0004BC0F /* Asiate.wav */; };
+		8A5981262860E9920004BC0F /* Freibad.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A5981222860E9920004BC0F /* Freibad.rcproject */; };
+		8A5981272860E9920004BC0F /* Asiate.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A5981232860E9920004BC0F /* Asiate.rcproject */; };
+		8A5981282860E9920004BC0F /* Genusstreff.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A5981242860E9920004BC0F /* Genusstreff.rcproject */; };
+		8A5981292860E9920004BC0F /* Billa.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A5981252860E9920004BC0F /* Billa.rcproject */; };
 		8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */; };
 		8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6CCC428145AFC00DE5902 /* Model.swift */; };
 		F4281A2A284517550091BB69 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4281A29284517550091BB69 /* FinalViewController.swift */; };
@@ -33,6 +41,14 @@
 		1FE5801C283BD34D00DC58A1 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		8A5761BB28300EAD00512F9A /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		8A598115285E3E460004BC0F /* welcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = welcome.wav; sourceTree = "<group>"; };
+		8A59811A2860E87A0004BC0F /* Billa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Billa.wav; sourceTree = "<group>"; };
+		8A59811B2860E87A0004BC0F /* Freibad.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Freibad.wav; sourceTree = "<group>"; };
+		8A59811C2860E87A0004BC0F /* Genusstreff.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Genusstreff.wav; sourceTree = "<group>"; };
+		8A59811D2860E87A0004BC0F /* Asiate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Asiate.wav; sourceTree = "<group>"; };
+		8A5981222860E9920004BC0F /* Freibad.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Freibad.rcproject; sourceTree = "<group>"; };
+		8A5981232860E9920004BC0F /* Asiate.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Asiate.rcproject; sourceTree = "<group>"; };
+		8A5981242860E9920004BC0F /* Genusstreff.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Genusstreff.rcproject; sourceTree = "<group>"; };
+		8A5981252860E9920004BC0F /* Billa.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Billa.rcproject; sourceTree = "<group>"; };
 		8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGeoAnchor.swift; sourceTree = "<group>"; };
 		8AD6CCC428145AFC00DE5902 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F4281A29284517550091BB69 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +83,10 @@
 		8A598114285E3E000004BC0F /* Audios */ = {
 			isa = PBXGroup;
 			children = (
+				8A59811D2860E87A0004BC0F /* Asiate.wav */,
+				8A59811A2860E87A0004BC0F /* Billa.wav */,
+				8A59811B2860E87A0004BC0F /* Freibad.wav */,
+				8A59811C2860E87A0004BC0F /* Genusstreff.wav */,
 				8A598115285E3E460004BC0F /* welcome.wav */,
 			);
 			path = Audios;
@@ -99,6 +119,10 @@
 				F43026C127F2189500A8708B /* Experience.rcproject */,
 				F4F4C4A8281697980057BBDC /* Eingang.rcproject */,
 				F4F4C4A7281697980057BBDC /* Schilder.rcproject */,
+				8A5981232860E9920004BC0F /* Asiate.rcproject */,
+				8A5981252860E9920004BC0F /* Billa.rcproject */,
+				8A5981222860E9920004BC0F /* Freibad.rcproject */,
+				8A5981242860E9920004BC0F /* Genusstreff.rcproject */,
 				F43026C327F2189500A8708B /* Main.storyboard */,
 				F43026D627F221F700A8708B /* OverviewController.swift */,
 				F43026D427F220E900A8708B /* CompassViewController.swift */,
@@ -175,7 +199,11 @@
 			files = (
 				8A5761BC28300EAD00512F9A /* right-arrow.png in Resources */,
 				F43026CA27F2189600A8708B /* LaunchScreen.storyboard in Resources */,
+				8A59811E2860E87A0004BC0F /* Billa.wav in Resources */,
+				8A5981212860E87A0004BC0F /* Asiate.wav in Resources */,
 				F43026C727F2189600A8708B /* Assets.xcassets in Resources */,
+				8A5981202860E87A0004BC0F /* Genusstreff.wav in Resources */,
+				8A59811F2860E87A0004BC0F /* Freibad.wav in Resources */,
 				8A598116285E3E460004BC0F /* welcome.wav in Resources */,
 				F43026C527F2189500A8708B /* Main.storyboard in Resources */,
 				F4424C6127F44BC5008F80D4 /* Simple_compass_rose.svg.png in Resources */,
@@ -189,6 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5981282860E9920004BC0F /* Genusstreff.rcproject in Sources */,
+				8A5981262860E9920004BC0F /* Freibad.rcproject in Sources */,
+				8A5981272860E9920004BC0F /* Asiate.rcproject in Sources */,
 				8AD6CCC528145AFC00DE5902 /* Model.swift in Sources */,
 				F4281A2A284517550091BB69 /* FinalViewController.swift in Sources */,
 				F4F303132832E085008AC11C /* AnchorDescription.swift in Sources */,
@@ -199,6 +230,7 @@
 				F43026C227F2189500A8708B /* Experience.rcproject in Sources */,
 				F4F4C4AA281697980057BBDC /* Eingang.rcproject in Sources */,
 				F4F4C4A9281697980057BBDC /* Schilder.rcproject in Sources */,
+				8A5981292860E9920004BC0F /* Billa.rcproject in Sources */,
 				8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */,
 				F45376622815BE9200224816 /* LocationViewController.swift in Sources */,
 				F43026D727F221F700A8708B /* OverviewController.swift in Sources */,
