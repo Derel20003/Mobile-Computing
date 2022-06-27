@@ -28,14 +28,16 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
         
+        model.loadAnchors()
+        model.loadDescriptions()
+        
         if (CLLocationManager.headingAvailable()) {
             self.locationManager.startUpdatingHeading()
             self.locationManager.startUpdatingLocation()
             self.locationManager.desiredAccuracy=kCLLocationAccuracyBest
         }
         
-        model.loadAnchors()
-        model.loadDescriptions()
+        UIApplication.shared.isIdleTimerDisabled = true
 
     }
     
@@ -148,6 +150,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
 
         arrow.transform = CGAffineTransform(rotationAngle: CGFloat(-round(dir)*Double.pi/180))
 
+    }
+    
+    override open var shouldAutorotate: Bool {
+        return false
     }
     
     func alert () {
