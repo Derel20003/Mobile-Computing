@@ -15,8 +15,6 @@ public class Model {
     var lastAnchorPlaced = false;
     let anchorPath: String = "http://193.122.3.31/anchors"
     let descriptionPath: String = "http://193.122.3.31/descriptions"
-    // Temporary
-    let models = ["Eingang": Eingang.self]
     
     func addAnchor (toAdd anchor: CustomGeoAnchor) {
         objects.append(anchor)

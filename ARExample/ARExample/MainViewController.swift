@@ -69,7 +69,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 shown = true;
                 alert()
             
-                var box: Scene.AnchorCollection.Element = try! Experience.loadBox();
+                var box: Scene.AnchorCollection.Element? = nil;
                 if (anchor == "Freibad") {
                     box = try! Freibad.loadBox()
                     let newBox: Freibad.Box = box as! Freibad.Box;
@@ -88,7 +88,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                     newBox.actions.tapped.onAction = handleTapOnEntity(_:);
                 }
                 
-                arView.scene.anchors.append(box)
+                arView.scene.anchors.append(box!)
                 switchControls()
             }
         }

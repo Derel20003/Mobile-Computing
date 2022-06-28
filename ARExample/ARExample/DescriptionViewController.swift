@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class DescriptionViewController: UIViewController {
+class DescriptionViewController: UIViewController, AVAudioPlayerDelegate {
     
     var model: Model? = nil
     var player: AVAudioPlayer?
@@ -42,10 +42,10 @@ class DescriptionViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setMode(.default)
                 try AVAudioSession.sharedInstance().setActive(true)
                 
-                let audio = model?.getCurrent()?.anchor;
-                guard let audio = audio else {
+                let audio = model?.getCurrent()?.anchor ?? "welcome";
+                /*guard let audio = audio else {
                     return
-                }
+                }*/
                 
                 let url = Bundle.main.path(forResource: audio, ofType: "wav")
                 guard let url = url else {
@@ -54,16 +54,21 @@ class DescriptionViewController: UIViewController {
                 }
                 
                 player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: url))
+                player?.delegate = self;
                 guard let player = player else {
                     print("no player")
                     return
                 }
-
                 player.play()
             } catch {
                 print("audio player error")
             }
         }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("audio finished")
+            audioButton.setTitle("Play Audio", for: .normal)
     }
     
     /*
