@@ -23,7 +23,6 @@
 		F4281A2A284517550091BB69 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4281A29284517550091BB69 /* FinalViewController.swift */; };
 		F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026BD27F2189500A8708B /* AppDelegate.swift */; };
 		F43026C027F2189500A8708B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43026BF27F2189500A8708B /* ViewController.swift */; };
-		F43026C227F2189500A8708B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F43026C127F2189500A8708B /* Experience.rcproject */; };
 		F43026C527F2189500A8708B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43026C327F2189500A8708B /* Main.storyboard */; };
 		F43026C727F2189600A8708B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43026C627F2189600A8708B /* Assets.xcassets */; };
 		F43026CA27F2189600A8708B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43026C827F2189600A8708B /* LaunchScreen.storyboard */; };
@@ -33,8 +32,6 @@
 		F45376622815BE9200224816 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45376612815BE9200224816 /* LocationViewController.swift */; };
 		F4F3031128329773008AC11C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F3031028329773008AC11C /* MainViewController.swift */; };
 		F4F303132832E085008AC11C /* AnchorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F303122832E085008AC11C /* AnchorDescription.swift */; };
-		F4F4C4A9281697980057BBDC /* Schilder.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C4A7281697980057BBDC /* Schilder.rcproject */; };
-		F4F4C4AA281697980057BBDC /* Eingang.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C4A8281697980057BBDC /* Eingang.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +52,6 @@
 		F43026BA27F2189500A8708B /* ARExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43026BD27F2189500A8708B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43026BF27F2189500A8708B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F43026C127F2189500A8708B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		F43026C427F2189500A8708B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F43026C627F2189600A8708B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43026C927F2189600A8708B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,8 +61,6 @@
 		F45376612815BE9200224816 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		F4F3031028329773008AC11C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F4F303122832E085008AC11C /* AnchorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorDescription.swift; sourceTree = "<group>"; };
-		F4F4C4A7281697980057BBDC /* Schilder.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Schilder.rcproject; path = ARExample/Schilder.rcproject; sourceTree = SOURCE_ROOT; };
-		F4F4C4A8281697980057BBDC /* Eingang.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Eingang.rcproject; path = ARExample/Eingang.rcproject; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +110,6 @@
 				8AD6CCC2281456A300DE5902 /* CustomGeoAnchor.swift */,
 				F43026BD27F2189500A8708B /* AppDelegate.swift */,
 				F43026BF27F2189500A8708B /* ViewController.swift */,
-				F43026C127F2189500A8708B /* Experience.rcproject */,
-				F4F4C4A8281697980057BBDC /* Eingang.rcproject */,
-				F4F4C4A7281697980057BBDC /* Schilder.rcproject */,
 				8A5981232860E9920004BC0F /* Asiate.rcproject */,
 				8A5981252860E9920004BC0F /* Billa.rcproject */,
 				8A5981222860E9920004BC0F /* Freibad.rcproject */,
@@ -227,9 +218,6 @@
 				F4F3031128329773008AC11C /* MainViewController.swift in Sources */,
 				F43026C027F2189500A8708B /* ViewController.swift in Sources */,
 				F43026BE27F2189500A8708B /* AppDelegate.swift in Sources */,
-				F43026C227F2189500A8708B /* Experience.rcproject in Sources */,
-				F4F4C4AA281697980057BBDC /* Eingang.rcproject in Sources */,
-				F4F4C4A9281697980057BBDC /* Schilder.rcproject in Sources */,
 				8A5981292860E9920004BC0F /* Billa.rcproject in Sources */,
 				8AD6CCC3281456A300DE5902 /* CustomGeoAnchor.swift in Sources */,
 				F45376622815BE9200224816 /* LocationViewController.swift in Sources */,
